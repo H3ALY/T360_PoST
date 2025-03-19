@@ -78,6 +78,16 @@ When you've published some messages you will be able to retrieve them with -
 ```cmd
 curl -X POST http://localhost:8085/v1/projects/transfer360/subscriptions/my-sub:pull -H "Content-Type: application/json" -d "{ \"maxMessages\": 10 }"
 ```
+
+
+## Running a request
+
+- Using postman create a Get request for http://localhost:8888/handle_request (updating the port if required)
+
+- Add the searchBody criteria to your request body
+
+- Send the request.
+
 ## Principles
 ### SOLID
 
