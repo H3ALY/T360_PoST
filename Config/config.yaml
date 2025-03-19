@@ -1,0 +1,24 @@
+server:
+  port: 8888
+
+domains:
+  transfer360:
+    sandbox: ""
+
+endpoints:
+  test_search:
+    acmelease: "${domains.transfer360.sandbox}/test_search/acmelease"
+    leasecompany: "${domains.transfer360.sandbox}/test_search/leasecompany"
+    fleetcompany: "${domains.transfer360.sandbox}/test_search/fleetcompany"
+    hirecompany: "${domains.transfer360.sandbox}/test_search/hirecompany"
+
+google:
+  usingCloud: false
+  serviceAccountPath: "Config/service-account-key.json"
+  pubSubTopic: "positive_searches"
+
+local_emulator:
+  host: "localhost"
+  port: 8085
+  projectId: "transfer360"
+  pubSubTopic: "positive_searches"
